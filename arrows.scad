@@ -3,7 +3,7 @@ $fn=50;
 size_array = [20,20,15];
 position_array = [5,5,5];
 
-mcube( size_array, measure= true, align = center );
+mcube( size_array, measure= true, align = "center" );
 translate( [0,50,0] ) msphere( 21, measure= true );
 
 module mcube( size, measure ) {
@@ -78,5 +78,5 @@ module arrows( size_array, measure, alignment ) {
                 translate([0,measurement,0])cylinder(r=.25,h=15);
             }
      }
- //} // END Rotate to Lay on XY Plane
+ } // END Rotate to Lay on XY Plane
  } // END Rotate to object being measured
